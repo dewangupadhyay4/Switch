@@ -1,0 +1,52 @@
+
+package pkgswitch;
+
+import java.util.Scanner;
+
+
+public class Switch {
+
+    
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int num1=s.nextInt();
+        
+        System.out.println("Enter the second number: ");
+        int num2=s.nextInt();
+        
+        System.out.println("Enter the what you want to perform: 1)Add 2)Sub 3)Mul 4)Div \"(Enter the number)\" ");
+        int opt=s.nextInt();
+        
+        switch(opt)
+        {
+            case 1:
+                int r=num1+num2;
+                System.out.println("The addition is "+r);
+                break;
+                
+            case 2:
+                int t=num1-num2;
+                System.out.println("The subtraction is "+t);
+                break;
+                
+            case 3:
+                int u=num1+num2;
+                System.out.println("The multiplication is "+u);
+                break;
+                
+            case 4:
+                int v=num1+num2;
+                System.out.println("The division is "+v);
+                break;
+                
+            default:
+                {
+                    System.out.println("Wrong Input");
+                }
+                
+                
+        }
+    }
+    
+}
